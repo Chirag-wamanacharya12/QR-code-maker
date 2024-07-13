@@ -1,0 +1,133 @@
+[debug] [2024-07-13T10:33:30.267Z] ----------------------------------------------------------------------
+[debug] [2024-07-13T10:33:30.290Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Win10\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-07-13T10:33:30.290Z] CLI Version:   13.13.2
+[debug] [2024-07-13T10:33:30.291Z] Platform:      win32
+[debug] [2024-07-13T10:33:30.291Z] Node Version:  v21.7.1
+[debug] [2024-07-13T10:33:30.292Z] Time:          Sat Jul 13 2024 16:03:30 GMT+0530 (India Standard Time)
+[debug] [2024-07-13T10:33:30.293Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-13T10:33:30.320Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-13T10:33:30.321Z] > authorizing via signed-in user (pertinaxstudios@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Win10\Desktop\QRcode maker
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-07-13T10:40:27.023Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-07-13T10:40:27.035Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"qr-code-maker-ebea7","name":"QR_code"}
+[debug] [2024-07-13T10:40:28.858Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 400
+[debug] [2024-07-13T10:40:28.859Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":400,"message":"field [display_name] has issue [project display name contains invalid characters]","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"display_name","description":"project display name contains invalid characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2024-07-13T10:40:29.066Z] FirebaseError: HTTP Error: 400, field [display_name] has issue [project display name contains invalid characters]
+    at responseToError (C:\Users\Win10\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Win10\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:305:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2024-07-13T11:02:43.078Z] ----------------------------------------------------------------------
+[debug] [2024-07-13T11:02:43.135Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Win10\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-07-13T11:02:43.136Z] CLI Version:   13.13.2
+[debug] [2024-07-13T11:02:43.137Z] Platform:      win32
+[debug] [2024-07-13T11:02:43.137Z] Node Version:  v21.7.1
+[debug] [2024-07-13T11:02:43.141Z] Time:          Sat Jul 13 2024 16:32:43 GMT+0530 (India Standard Time)
+[debug] [2024-07-13T11:02:43.142Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-13T11:02:43.237Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-13T11:02:43.238Z] > authorizing via signed-in user (pertinaxstudios@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Win10\Desktop\QRcode maker
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-07-13T11:03:22.533Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-07-13T11:03:23.613Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-07-13T11:03:23.613Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project qr-code-maker-ebea7 (QR-code maker) 
+[info] 
+=== Hosting Setup
+[debug] [2024-07-13T11:03:32.582Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/qr-code-maker-ebea7 [none]
+[debug] [2024-07-13T11:03:33.227Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/qr-code-maker-ebea7 200
+[debug] [2024-07-13T11:03:33.228Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/qr-code-maker-ebea7 {"projectId":"qr-code-maker-ebea7","projectNumber":"874076503266","displayName":"QR-code maker","name":"projects/qr-code-maker-ebea7","resources":{"hostingSite":"qr-code-maker-ebea7"},"state":"ACTIVE","etag":"1_d44f42b0-bb48-4a56-974b-4f2155daf295"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-07-13T11:03:53.421Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-07-13T11:03:53.542Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-07-13T11:03:53.543Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.12.3","browserURL":"https://www.gstatic.com/firebasejs/10.12.3/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.12.3/firebase.tgz"},"live":{"version":"10.12","browserURL":"https://www.gstatic.com/firebasejs/live/10.12/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.12/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.12.3/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.12.3/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.12.3/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/10.12.3/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/10.12.3/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.12.3/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.12.3/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.12.3/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.12.3/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.12.3/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.12.3/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.12.3/firebase-database.js","vertexai-preview":"https://www.gstatic.com/firebasejs/10.12.3/firebase-vertexai-preview.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\Win10 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=779535656&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-07-13T11:05:07.901Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-07-13T11:05:07.934Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-07-13T11:05:08.433Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-07-13T11:05:08.434Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-07-13T11:05:08.685Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-07-13T11:05:09.135Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-07-13T11:05:09.135Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"Chirag-wamanacharya12","id":175088179,"node_id":"U_kgDOCm-iMw","avatar_url":"https://avatars.githubusercontent.com/u/175088179?v=4","gravatar_id":"","url":"https://api.github.com/users/Chirag-wamanacharya12","html_url":"https://github.com/Chirag-wamanacharya12","followers_url":"https://api.github.com/users/Chirag-wamanacharya12/followers","following_url":"https://api.github.com/users/Chirag-wamanacharya12/following{/other_user}","gists_url":"https://api.github.com/users/Chirag-wamanacharya12/gists{/gist_id}","starred_url":"https://api.github.com/users/Chirag-wamanacharya12/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Chirag-wamanacharya12/subscriptions","organizations_url":"https://api.github.com/users/Chirag-wamanacharya12/orgs","repos_url":"https://api.github.com/users/Chirag-wamanacharya12/repos","events_url":"https://api.github.com/users/Chirag-wamanacharya12/events{/privacy}","received_events_url":"https://api.github.com/users/Chirag-wamanacharya12/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":4,"public_gists":0,"followers":0,"following":0,"created_at":"2024-07-09T05:43:42Z","updated_at":"2024-07-09T05:43:55Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":74,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as Chirag-wamanacharya12 
+[info] 
+[debug] [2024-07-13T11:08:27.083Z] >>> [apiv2][query] GET https://api.github.com/repos/Chirag-wamanacharya12/QR-code maker/actions/secrets/public-key type=owner
+[debug] [2024-07-13T11:08:27.649Z] <<< [apiv2][status] GET https://api.github.com/repos/Chirag-wamanacharya12/QR-code maker/actions/secrets/public-key 404
+[debug] [2024-07-13T11:08:27.650Z] <<< [apiv2][body] GET https://api.github.com/repos/Chirag-wamanacharya12/QR-code maker/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/actions/secrets#get-a-repository-public-key","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-07-13T11:10:17.143Z] >>> [apiv2][query] GET https://api.github.com/repos/Chirag-wamanacharya12/QR-code maker/actions/secrets/public-key type=owner
+[debug] [2024-07-13T11:10:17.710Z] <<< [apiv2][status] GET https://api.github.com/repos/Chirag-wamanacharya12/QR-code maker/actions/secrets/public-key 404
+[debug] [2024-07-13T11:10:17.710Z] <<< [apiv2][body] GET https://api.github.com/repos/Chirag-wamanacharya12/QR-code maker/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/actions/secrets#get-a-repository-public-key","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-07-13T11:13:27.201Z] >>> [apiv2][query] GET https://api.github.com/repos/Chirag-wamanacharya12/QR-code maker/actions/secrets/public-key type=owner
+[debug] [2024-07-13T11:13:27.779Z] <<< [apiv2][status] GET https://api.github.com/repos/Chirag-wamanacharya12/QR-code maker/actions/secrets/public-key 404
+[debug] [2024-07-13T11:13:27.780Z] <<< [apiv2][body] GET https://api.github.com/repos/Chirag-wamanacharya12/QR-code maker/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/actions/secrets#get-a-repository-public-key","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 

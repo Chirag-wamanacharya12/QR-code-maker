@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Maker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>QR Code Maker</h1>
+        <input type="text" id="url" placeholder="Enter URL">
+        <br>
+        <button id="generate" disabled>Generate</button>
+        <button id="download" style="display:none;">Download</button>
+        <div id="qrcode"></div>
+    </div>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCwWErOU4JKQYl4JksZ8j5pshwaGnpXj3s",
+          authDomain: "qr-code-maker-ebea7.firebaseapp.com",
+          projectId: "qr-code-maker-ebea7",
+          storageBucket: "qr-code-maker-ebea7.appspot.com",
+          messagingSenderId: "874076503266",
+          appId: "1:874076503266:web:0c7eab1751264e145972bb",
+          measurementId: "G-VVRXT1GB0Q"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
